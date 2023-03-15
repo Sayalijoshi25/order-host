@@ -1,0 +1,10 @@
+---
+- hosts: all
+  tasks:
+    - name: print first host
+      debug:
+        msg: "replicator[0] is: {{ groups.replicator[0] }}"
+
+    - name: print second host
+      debug:
+        msg: "replicator[1] is: {{ groups.replicator[1] }}"
